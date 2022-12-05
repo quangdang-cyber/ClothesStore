@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" blendMode="SCREEN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormFXMLController">
+   <children>
+      <ImageView fx:id="img" fitHeight="174.0" fitWidth="219.0" layoutX="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tao-logo-shop-quan-ao-emily.jpg" />
+         </image>
+      </ImageView>
+      <Button contentDisplay="CENTER" layoutX="63.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnQuanlysp" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Quản lý&#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="217.66666666666669" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="394.66666666666663" AnchorPane.topAnchor="186.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnThanhtoan" contentDisplay="CENTER" layoutX="386.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnThanhtoan" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Thanh toán" AnchorPane.bottomAnchor="217.66666666666669" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="71.66666666666663" AnchorPane.topAnchor="186.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="63.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnKmai" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Khuyến mãi" AnchorPane.bottomAnchor="55.666666666666686" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="394.66666666666663" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="CENTER" layoutX="386.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnCapnhat" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Cập nhật &#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="55.666666666666686" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="71.66666666666663" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
