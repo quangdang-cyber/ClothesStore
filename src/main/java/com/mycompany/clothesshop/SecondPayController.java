@@ -22,6 +22,8 @@ public class SecondPayController{
      
     @FXML
     private Button BtnTv;
+    @FXML
+    private TextField Numberphone;
     
     public void Submit (ActionEvent event){
         String name = Name.getText();

@@ -16,33 +16,25 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
 
 /**
  *
  * @author MY PC
  */
-public class NewFXMainclass extends Application {
+public class NewFXMainclass  {
     @FXML
-    private Button BtnThanhToan;
+    private Button btnThanhToan;
     
-    @Override
-    public void start(Stage primaryStage) {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("formFXML.fxml"));
-            
-            Scene scene = new Scene(root);
-            primaryStage.setScene(scene);
-            primaryStage.show();
-        } catch (IOException ex) {
-            Logger.getLogger(NewFXMainclass.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    @FXML
+    void thanhToan(ActionEvent event)throws IOException{
+        App.setRoot("FirstPay");
     }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
+    @FXML
+    void khuyenMai(ActionEvent event)throws IOException{
+        App.setRoot("KhuyenMai");
     }
+    
+    
     
 }

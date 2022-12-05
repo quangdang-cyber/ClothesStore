@@ -69,8 +69,8 @@
         </Label>
             <ButtonBar layoutX="31.0" layoutY="242.0" prefHeight="40.0" prefWidth="200.0" />
             <ButtonBar layoutX="165.0" layoutY="204.0" prefHeight="40.0" prefWidth="200.0" />
-          <Button fx:id="btnExit" layoutX="424.0" layoutY="211.0" mnemonicParsing="false" onAction="#login" text="Exit" />
-          <Button fx:id="btnLogin" layoutX="354.0" layoutY="211.0" mnemonicParsing="false" text="Login" />
+          <Button fx:id="btnExit" layoutX="424.0" layoutY="211.0" mnemonicParsing="false" text="Exit" />
+          <Button fx:id="btnLogin" layoutX="354.0" layoutY="211.0" mnemonicParsing="false" onAction="#login" text="Login" />
             <TextField fx:id="txtName" layoutX="350.0" layoutY="108.0" />
             <TextField fx:id="txtPassword" layoutX="350.0" layoutY="145.0" />
             <Text layoutX="275.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />

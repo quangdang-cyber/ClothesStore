@@ -5,18 +5,20 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="689.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FirstPayController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="866.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.FirstPayController">
    <children>
-      <ImageView fitHeight="160.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+<!--      <ImageView fitHeight="160.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/tao-logo-shop-quan-ao-emily.jpg" />
          </image>
-      </ImageView>
+      </ImageView>-->
       <Label layoutX="289.0" layoutY="26.0" text="Thanh toán">
          <font>
             <Font name="Goudy Old Style Bold" size="64.0" />
@@ -41,37 +43,38 @@
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="631.0" layoutY="183.0" onAction="#tfsl1" prefHeight="25.0" prefWidth="41.0" />
-      <TextField layoutX="631.0" layoutY="224.0" onAction="#tfsl2" prefHeight="25.0" prefWidth="41.0" />
-      <TextField layoutX="631.0" layoutY="264.0" onAction="#tfsl3" prefHeight="25.0" prefWidth="41.0" />
-      <TextField layoutX="631.0" layoutY="309.0" onAction="#tfsl4" prefHeight="25.0" prefWidth="41.0" />
-      <TextField layoutX="631.0" layoutY="349.0" onAction="#tfsl5" prefHeight="25.0" prefWidth="41.0" />
-      <CheckBox layoutX="345.0" layoutY="364.0" mnemonicParsing="false" text="Áp dụng khuyến mãi (10%)">
+      <CheckBox layoutX="332.0" layoutY="480.0" mnemonicParsing="false" text="Áp dụng khuyến mãi (10%)">
          <font>
             <Font name="Times New Roman" size="14.0" />
          </font>
       </CheckBox>
-      <Label fx:id="lbNhap11" layoutX="341.0" layoutY="394.0" text="~ Tổng đơn hàng:">
+      <Label fx:id="lbNhap11" layoutX="517.0" layoutY="481.0" text="~ Tổng đơn hàng:">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbNhap111" layoutX="341.0" layoutY="420.0" text="~ Tổng đơn hàng &#10;   đã trừ khuyến mãi:">
+      <Label fx:id="lbNhap111" layoutX="507.0" layoutY="504.0" text="~ Tổng đơn hàng &#10;   đã trừ khuyến mãi:">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="506.0" layoutY="389.0" prefHeight="25.0" prefWidth="165.0" />
-      <TextField layoutX="506.0" layoutY="424.0" prefHeight="25.0" prefWidth="165.0" />
-      <Button layoutX="523.0" layoutY="466.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Tiến hành thanh toán">
+      <TextField layoutX="655.0" layoutY="481.0" prefHeight="25.0" prefWidth="165.0" />
+      <TextField layoutX="655.0" layoutY="508.0" prefHeight="25.0" prefWidth="165.0" />
+      <Button layoutX="663.0" layoutY="541.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Tiến hành thanh toán">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="443.0" layoutY="466.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Nhập lại">
+      <Button layoutX="589.0" layoutY="541.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Nhập lại">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Button>
+      <TreeTableView layoutX="337.0" layoutY="172.0" prefHeight="296.0" prefWidth="515.0">
+        <columns>
+          <TreeTableColumn prefWidth="75.0" text="C1" />
+          <TreeTableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TreeTableView>
    </children>
 </AnchorPane>

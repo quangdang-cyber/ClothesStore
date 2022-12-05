@@ -35,7 +35,7 @@ public class LoginController  {
         ResultSet rs = stm.executeQuery("SELECT * FROM user WHERE `name` = '" + name +"'"+ " AND `password` = '" + password+"'");
         while(rs.next()){
            txtName.setText("true");
-           App.setRoot("primary");
+           App.setRoot("formFXML");
         }
         
     }
