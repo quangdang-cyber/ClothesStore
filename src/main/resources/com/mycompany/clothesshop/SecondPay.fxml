@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.SecondPayController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.SecondPayController">
    <children>
       <ImageView fitHeight="131.0" fitWidth="185.0" layoutX="308.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -27,22 +27,11 @@
          </font>
       </Label>
       <Separator layoutX="576.0" layoutY="78.0" prefHeight="2.0" prefWidth="481.0" style="-fx-background-color: pink;" />
-      <Label layoutX="461.0" layoutY="146.0" text="Họ Tên Khách hàng:">
+      <Label layoutX="314.0" layoutY="141.0" text="~~ Đơn hàng:">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="465.0" layoutY="181.0" text="Số điện thoại:">
-         <font>
-            <Font name="Times New Roman Bold" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="319.0" layoutY="217.0" text="~~ Đơn hàng:">
-         <font>
-            <Font name="Times New Roman Bold" size="18.0" />
-         </font>
-      </Label>
-      <Separator layoutX="321.0" layoutY="213.0" prefHeight="2.0" prefWidth="702.0" style="-fx-background-color: lavender;" />
       <Label layoutX="474.0" layoutY="527.0" text="Tiền mặt nhận từ khách:">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
@@ -66,12 +55,10 @@
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="Name" layoutX="684.0" layoutY="146.0" prefHeight="25.0" prefWidth="293.0" />
-      <TextField fx:id="Numberphone" layoutX="686.0" layoutY="177.0" prefHeight="25.0" prefWidth="292.0" />
-      <TableView layoutX="420.0" layoutY="245.0" prefHeight="217.0" prefWidth="567.0">
+      <TableView layoutX="306.0" layoutY="171.0" prefHeight="291.0" prefWidth="797.0">
         <columns>
-          <TableColumn prefWidth="288.6666259765625" text="C2" />
-          <TableColumn prefWidth="277.3333549499512" text="C1" />
+          <TableColumn prefWidth="412.6666564941406" text="C2" />
+          <TableColumn prefWidth="383.33333333333337" text="C1" />
         </columns>
       </TableView>
       <MenuBar layoutX="-2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="174.0" style="-fx-background-color: azure;">
