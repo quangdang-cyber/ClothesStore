@@ -10,11 +10,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.NewFXMainclass">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.NewFXMainclass">
    <children>
-      <AnchorPane style="-fx-background-color: white;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;">
          <children>
-            <MenuBar fx:id="menu" prefHeight="25.0" prefWidth="629.0" style="-fx-background-color: azure;">
+            <ImageView fitHeight="189.0" fitWidth="260.0" layoutX="516.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-alignment: center;">
+               <image>
+                  <Image url="@../image/remiin.jpg" />
+               </image></ImageView>
+            <MenuBar fx:id="menu" layoutY="13.0" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: azure;">
               <menus>
                 <Menu mnemonicParsing="false" text="Menu">
                   <items>
@@ -28,30 +32,26 @@
                 </Menu>
               </menus>
             </MenuBar>
-            <Button fx:id="QuanltSp" layoutX="45.0" layoutY="149.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Quanly" prefHeight="103.0" prefWidth="222.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Quản lý&#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="149.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="362.0" AnchorPane.topAnchor="149.0">
+            <Button fx:id="QuanltSp" layoutX="125.0" layoutY="185.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Quanly" prefHeight="222.0" prefWidth="435.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Quản lý&#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="720.0" AnchorPane.topAnchor="185.0">
                <font>
                   <Font name="Times New Roman Bold" size="32.0" />
                </font>
             </Button>
-            <Button layoutX="45.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#khuyenMai" prefHeight="103.0" prefWidth="222.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Cập nhật&#10; khuyến mãi" textAlignment="CENTER" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="362.0" AnchorPane.topAnchor="283.0">
+            <Button layoutX="122.0" layoutY="440.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#khuyenMai" prefHeight="220.0" prefWidth="437.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Cập nhật&#10; khuyến mãi" textAlignment="CENTER" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="721.0" AnchorPane.topAnchor="440.0">
                <font>
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
             </Button>
-            <Button fx:id="btnThanhtoan" contentDisplay="RIGHT" layoutX="344.0" layoutY="149.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#thanhToan" prefHeight="103.0" prefWidth="222.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Thanh toán" AnchorPane.bottomAnchor="149.0" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="149.0">
+            <Button fx:id="btnThanhtoan" contentDisplay="RIGHT" layoutX="711.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#thanhToan" prefHeight="214.0" prefWidth="448.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Thanh toán" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="711.0" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="195.0">
                <font>
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
             </Button>
-            <Button contentDisplay="RIGHT" layoutX="344.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Thongke" prefHeight="103.0" prefWidth="222.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Thống kê" textAlignment="CENTER" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="283.0">
+            <Button contentDisplay="RIGHT" layoutX="714.0" layoutY="427.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Thongke" prefHeight="220.0" prefWidth="435.0" style="-fx-alignment: center; -fx-background-color: snow; -fx-border-color: grey;" text="Thống kê" textAlignment="CENTER" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="714.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="427.0">
                <font>
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
             </Button>
-            <ImageView fitHeight="120.0" fitWidth="152.0" layoutX="249.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" style="-fx-alignment: center;">
-               <image>
-                  <Image url="@../image/remiin.jpg" />
-               </image></ImageView>
          </children>
       </AnchorPane>
    </children>
