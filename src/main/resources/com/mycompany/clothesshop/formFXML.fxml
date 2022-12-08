@@ -18,7 +18,7 @@
                <image>
                   <Image url="@../image/remiin.jpg" />
                </image></ImageView>
-            <MenuBar fx:id="menu" layoutY="13.0" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: azure;">
+            <MenuBar fx:id="menu" layoutY="30.0" prefHeight="27.0" prefWidth="133.0" style="-fx-background-color: azure;">
               <menus>
                 <Menu mnemonicParsing="false" text="Menu">
                   <items>
