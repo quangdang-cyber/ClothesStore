@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.sql.*;
 import java.lang.ClassNotFoundException;
+import javafx.application.Platform;
 
 public class LoginController  {
 
@@ -30,7 +31,7 @@ public class LoginController  {
         txtPassword.setText(password);
         
         
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/quanly","root","");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/quanly","root","Bichtram1812");
         Statement stm = conn.createStatement();
         ResultSet rs = stm.executeQuery("SELECT * FROM user WHERE `name` = '" + name +"'"+ " AND `password` = '" + password+"'");
         while(rs.next()){
@@ -38,6 +39,12 @@ public class LoginController  {
            App.setRoot("formFXML");
         }
         
+    }
+    
+    @FXML
+    public void Action (ActionEvent event) {
+        Platform.exit();
+        System.exit(0);
     }
 
 }

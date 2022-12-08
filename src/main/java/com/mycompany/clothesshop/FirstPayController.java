@@ -1,12 +1,9 @@
 package com.mycompany.clothesshop;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
-
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -30,4 +27,20 @@ public class FirstPayController{
     private void btnTim(ActionEvent event) {
     }
     
+    @FXML
+    public void Action (ActionEvent event) {
+        Platform.exit();
+        System.exit(0);
+    }
+    
+    @FXML
+    void Mainform (ActionEvent event) throws IOException{
+        App.setRoot("formFXML");
+    }
+    
+    @FXML
+    void ContinuePay (ActionEvent event) throws IOException{
+        App.setRoot("SecondPay");
+    }
+ 
 }

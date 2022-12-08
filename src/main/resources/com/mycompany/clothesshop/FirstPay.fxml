@@ -3,7 +3,12 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.control.TreeTableView?>
@@ -12,69 +17,89 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="866.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.FirstPayController">
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.FirstPayController">
    <children>
+      <ImageView fitHeight="162.0" fitWidth="244.0" layoutX="66.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/remiin.jpg" />
+         </image>
+      </ImageView>
 <!--      <ImageView fitHeight="160.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/tao-logo-shop-quan-ao-emily.jpg" />
          </image>
       </ImageView>-->
-      <Label layoutX="289.0" layoutY="26.0" text="Thanh toán">
+      <Label layoutX="549.0" layoutY="26.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Thanh toán">
          <font>
             <Font name="Goudy Old Style Bold" size="64.0" />
          </font>
       </Label>
       <Separator prefWidth="200.0" />
-      <Separator layoutX="203.0" layoutY="115.0" prefHeight="3.0" prefWidth="479.0" style="-fx-background-color: pink;" />
-      <Label fx:id="lbNhap" layoutX="8.0" layoutY="150.0" text="Nhập mã sản phẩm:">
+      <Separator layoutX="273.0" layoutY="115.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="3.0" prefWidth="921.0" style="-fx-background-color: pink;" />
+      <Label fx:id="lbNhap" layoutX="59.0" layoutY="186.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Nhập mã sản phẩm:">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Separator layoutX="331.0" layoutY="117.0" orientation="VERTICAL" prefHeight="383.0" prefWidth="0.0" />
-      <TextField layoutX="170.0" layoutY="147.0" onAction="#tfMasp" prefHeight="25.0" prefWidth="156.0" />
-      <Button layoutX="216.0" layoutY="183.0" mnemonicParsing="false" onAction="#btnTim" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: Lavender;" text="Tìm kiếm">
+      <Separator layoutX="546.0" layoutY="117.0" orientation="VERTICAL" prefHeight="599.0" prefWidth="0.0" />
+      <TextField layoutX="235.0" layoutY="183.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#tfMasp" prefHeight="25.0" prefWidth="156.0" />
+      <Button layoutX="406.0" layoutY="183.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnTim" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: Lavender;" text="Tìm kiếm">
          <font>
             <Font name="Times New Roman" size="14.0" />
          </font>
       </Button>
-      <Label fx:id="lbNhap1" layoutX="345.0" layoutY="150.0" text="~ Đơn hàng gồm có:">
+      <Label fx:id="lbNhap1" layoutX="579.0" layoutY="130.0" text="~ Đơn hàng gồm có:">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <CheckBox layoutX="332.0" layoutY="480.0" mnemonicParsing="false" text="Áp dụng khuyến mãi (10%)">
+      <CheckBox layoutX="579.0" layoutY="526.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Áp dụng khuyến mãi (10%)">
          <font>
             <Font name="Times New Roman" size="14.0" />
          </font>
       </CheckBox>
-      <Label fx:id="lbNhap11" layoutX="517.0" layoutY="481.0" text="~ Tổng đơn hàng:">
+      <Label fx:id="lbNhap11" layoutX="787.0" layoutY="541.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="~ Tổng đơn hàng:">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbNhap111" layoutX="507.0" layoutY="504.0" text="~ Tổng đơn hàng &#10;   đã trừ khuyến mãi:">
+      <Label fx:id="lbNhap111" layoutX="787.0" layoutY="571.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="~ Tổng đơn hàng &#10;   đã trừ khuyến mãi:">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="655.0" layoutY="481.0" prefHeight="25.0" prefWidth="165.0" />
-      <TextField layoutX="655.0" layoutY="508.0" prefHeight="25.0" prefWidth="165.0" />
-      <Button layoutX="663.0" layoutY="541.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Tiến hành thanh toán">
+      <TextField layoutX="934.0" layoutY="536.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" />
+      <TextField layoutX="934.0" layoutY="575.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="btpay" layoutX="1060.0" layoutY="611.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#ContinuePay" style="-fx-background-color: lavender;" text="Tiến hành thanh toán">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="589.0" layoutY="541.0" mnemonicParsing="false" style="-fx-background-color: lavender;" text="Nhập lại">
-         <font>
-            <Font name="Times New Roman Bold" size="14.0" />
-         </font>
-      </Button>
-      <TreeTableView layoutX="337.0" layoutY="172.0" prefHeight="296.0" prefWidth="515.0">
+      <TreeTableView layoutX="579.0" layoutY="160.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="363.0" prefWidth="630.0">
         <columns>
           <TreeTableColumn prefWidth="75.0" text="C1" />
           <TreeTableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TreeTableView>
+      <MenuBar layoutY="1.0" style="-fx-background-color: azure;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Mainform" text="Back to Main Form" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Option">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView layoutX="18.0" layoutY="219.0" prefHeight="406.0" prefWidth="507.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

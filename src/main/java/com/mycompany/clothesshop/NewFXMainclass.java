@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,7 +26,7 @@ import javafx.event.ActionEvent;
 public class NewFXMainclass  {
     @FXML
     private Button btnThanhToan;
-    
+     
     @FXML
     void thanhToan(ActionEvent event)throws IOException{
         App.setRoot("FirstPay");
@@ -35,6 +36,19 @@ public class NewFXMainclass  {
         App.setRoot("KhuyenMai");
     }
     
+    @FXML
+    void Quanly (ActionEvent event)throws IOException{
+        App.setRoot("QuanLySP");
+    }
     
-    
+    @FXML
+    void Thongke (ActionEvent event) throws IOException{
+        App.setRoot("ThongKe");
+    }
+      
+    @FXML
+    public void Action (ActionEvent event) {
+        Platform.exit();
+        System.exit(0);
+    }
 }

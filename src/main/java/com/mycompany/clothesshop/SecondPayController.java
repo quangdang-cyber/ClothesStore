@@ -5,6 +5,8 @@ package com.mycompany.clothesshop;
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
 
+import java.io.IOException;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -32,5 +34,16 @@ public class SecondPayController{
     
     public void Name (ActionEvent event){
         String name = Name.getText();        
+    }
+    
+    @FXML
+    void Payform (ActionEvent event) throws IOException{
+        App.setRoot("FirstPay");
+    }
+    
+    @FXML
+    public void Action (ActionEvent event) {
+        Platform.exit();
+        System.exit(0);
     }
 }
