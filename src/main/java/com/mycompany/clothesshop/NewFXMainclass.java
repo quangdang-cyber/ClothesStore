@@ -35,6 +35,9 @@ public class NewFXMainclass  {
         App.setRoot("KhuyenMai");
     }
     
-    
+    @FXML
+    void quanLiSanPham(ActionEvent event)throws IOException{
+        App.setRoot("QuanLySP");
+    }
     
 }
