@@ -55,10 +55,10 @@ public class SanPham {
     public void setQuantity(int quantity){
         this.quantity = quantity;
     }
-    public void getPrice(double price){
+    public void setPrice(double price){
         this.price = price;
     }
-    public void getDescription(String description){
+    public void setDescription(String description){
         this.description = description;
     }
     public void setMadeBy(String madeBy){

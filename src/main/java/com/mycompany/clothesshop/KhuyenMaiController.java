@@ -23,9 +23,14 @@ public class KhuyenMaiController{
     @FXML
     private Button BtReset;
     
-     @FXML
+    @FXML
     void reset(ActionEvent event)throws IOException{
 //        App.setRoot("KhuyenMai");
     }
+    @FXML
+    void backToMain(ActionEvent event)throws IOException{
+        App.setRoot("formFXML");
+    }
+
     
 }

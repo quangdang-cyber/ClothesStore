@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.NewFXMainclass">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="675.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clothesshop.NewFXMainclass">
    <children>
-<!--      <ImageView fx:id="img" fitHeight="174.0" fitWidth="219.0" layoutX="243.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@image/tao-logo-shop-quan-ao-emily.jpg"  />
-         </image>
-      </ImageView>-->
-      <Button fx:id="quanlisp" contentDisplay="CENTER" layoutX="63.0" layoutY="186.0" mnemonicParsing="false" onAction="#quanLiSanPham" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Quản lý&#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="217.66666666666669" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="394.66666666666663" AnchorPane.topAnchor="186.0">
-         <font>
-            <Font name="Times New Roman Bold" size="36.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnThanhtoan" contentDisplay="CENTER" layoutX="386.0" layoutY="186.0" mnemonicParsing="false" onAction="#thanhToan" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Thanh toán" AnchorPane.bottomAnchor="217.66666666666669" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="71.66666666666663" AnchorPane.topAnchor="186.0">
-         <font>
-            <Font name="Times New Roman Bold" size="36.0" />
-         </font>
-      </Button>
-      <Button contentDisplay="CENTER" layoutX="63.0" layoutY="348.0" mnemonicParsing="false" onAction="#khuyenMai" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Khuyến mãi" AnchorPane.bottomAnchor="55.666666666666686" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="394.66666666666663" AnchorPane.topAnchor="348.0">
-         <font>
-            <Font name="Times New Roman Bold" size="36.0" />
-         </font>
-      </Button>
-      <Button contentDisplay="CENTER" layoutX="386.0" layoutY="348.0" mnemonicParsing="false" prefHeight="109.0" prefWidth="245.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Cập nhật &#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="55.666666666666686" AnchorPane.leftAnchor="386.0" AnchorPane.rightAnchor="71.66666666666663" AnchorPane.topAnchor="348.0">
-         <font>
-            <Font name="Times New Roman Bold" size="36.0" />
-         </font>
-      </Button>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="675.0" style="-fx-background-color: white;">
+         <children>
+      <!--      <ImageView fx:id="img" fitHeight="174.0" fitWidth="219.0" layoutX="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/tao-logo-shop-quan-ao-emily.jpg"  />
+               </image>
+            </ImageView>-->
+            <Button fx:id="quanlisp" contentDisplay="CENTER" layoutX="72.0" layoutY="182.0" mnemonicParsing="false" onAction="#quanLiSanPham" prefHeight="118.0" prefWidth="252.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Quản lý&#10;sản phẩm" textAlignment="CENTER" AnchorPane.bottomAnchor="195.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="351.0" AnchorPane.topAnchor="182.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnThanhtoan" contentDisplay="CENTER" layoutX="384.0" layoutY="182.0" mnemonicParsing="false" onAction="#thanhToan" prefHeight="118.0" prefWidth="246.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Thanh toán" AnchorPane.bottomAnchor="195.0" AnchorPane.leftAnchor="384.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="182.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="CENTER" layoutX="72.0" layoutY="336.0" mnemonicParsing="false" onAction="#khuyenMai" prefHeight="118.0" prefWidth="252.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Cập nhật &#10;khuyến mãi" textAlignment="CENTER" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="351.0" AnchorPane.topAnchor="336.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="CENTER" layoutX="384.0" layoutY="336.0" mnemonicParsing="false" onAction="#thongKe" prefHeight="118.0" prefWidth="246.0" style="-fx-background-color: Lavenderblush; -fx-border-color: black;" text="Thống kê&#10;" textAlignment="CENTER" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="384.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="336.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="169.0" fitWidth="221.0" layoutX="230.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/remiin.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </VBox>
